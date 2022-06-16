@@ -16,14 +16,14 @@
 
 </head>
 
-<body class="bg-green-100">
+<body class="bg-white absolute">
   <x-header._header />
 
-  
-  {{$slot}}
+  <section class="mt-36 mb-5">
+    {{$slot}}
+  </section>
 
-
-  <x-footer._footer />
+  <x-footer._footer class="" />
 </body>
 
 </html>

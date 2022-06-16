@@ -22,3 +22,5 @@ $boredURL = 'http://www.boredapi.com';
 Route::get('/', function () {
     return view('index');
 });
+
+
