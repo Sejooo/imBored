@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Bored REST API routes:
+// https://www.boredapi.com/documentation#endpoints-price-range
+$boredURL = 'http://www.boredapi.com';
+
+
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
