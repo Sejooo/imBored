@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BoredController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +19,4 @@ use Illuminate\Support\Facades\Route;
 $boredURL = 'http://www.boredapi.com';
 
 
-
-Route::get('/', function () {
-    return view('index');
-});
-
-
+Route::get('/', [BoredController::class, 'index'])->name('home');
